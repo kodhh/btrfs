@@ -4,7 +4,7 @@ env:
    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/etc/eselect/wine/bin
 jobs:
   cmake:
-    runs-on: msvc-wine
+    runs-on: ubuntu-24.04
     container: mstorsjo/msvc-wine
       volumes
       - /var/run/pcscd/pcscd.comm:/var/run/pcscd/pcscd.comm
