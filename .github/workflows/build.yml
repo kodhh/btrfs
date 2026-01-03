@@ -5,8 +5,9 @@ env:
 jobs:
   cmake:
     runs-on: ubuntu-24.04
-    container: mstorsjo/msvc-wine
-      volumes
+    container:
+      image: mstorsjo/msvc-wine
+      volumes:
       - /var/run/pcscd/pcscd.comm:/var/run/pcscd/pcscd.comm
     steps:
       - run: echo "SHORT_SHA=`echo ${{ github.sha }} | cut -c1-8`" >> $GITHUB_ENV
