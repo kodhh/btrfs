@@ -1,6 +1,5 @@
 name: build
-on:
-  workflow_dispatch: # 手动触发
+on: [push]
 env:
    PATH: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/etc/eselect/wine/bin
 jobs:
